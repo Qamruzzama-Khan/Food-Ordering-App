@@ -1,1 +1,1 @@
-export const common_Url = "https://food-ordering-app-admin-suj8.onrender.com/api/v1"
+export const common_Url = "https://food-ordering-app-backend-9lro.onrender.com/api/v1"
