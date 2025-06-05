@@ -31,15 +31,16 @@ const Login = () => {
       const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-          setIsSubmitting(true);
+          // setIsSubmitting(true);
           const response = await signin(form);
-          dispatch({ type: "LOGIN", payload: response.data.data });
-          localStorage.setItem("user", JSON.stringify(response.data.data));
-          setIsSubmitting(false);
-          setForm({ email: "", password: ""});
-          navigate("/")
+          console.log(response)
+          // dispatch({ type: "LOGIN", payload: response.data.data });
+          // localStorage.setItem("user", JSON.stringify(response.data.data));
+          // setIsSubmitting(false);
+          // setForm({ email: "", password: ""});
+          // navigate("/")
         } catch (error) {
-          setError(error.response.data.message);
+          // setError(error.response.data.message);
           setIsSubmitting(false);
         }
       };
